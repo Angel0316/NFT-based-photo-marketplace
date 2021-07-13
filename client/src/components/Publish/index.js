@@ -14,23 +14,19 @@ export default class Publish extends Component {
         super(props);
 
         this.state = {
-          /////// Default state
           storageValue: 0,
           web3: null,
           accounts: null,
           route: window.location.pathname.replace("/", ""),
 
-          /////// NFT concern
           valueNFTName: '',
           valueNFTSymbol: '',
           valuePhotoPrice: '',
 
-          /////// Ipfs Upload
           buffer: null,
           ipfsHash: ''
         };
 
-        /////// Handle
         this.handleNFTName = this.handleNFTName.bind(this);
         this.handleNFTSymbol = this.handleNFTSymbol.bind(this);
         this.handlePhotoPrice = this.handlePhotoPrice.bind(this);
